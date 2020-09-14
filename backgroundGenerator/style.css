@@ -1,0 +1,14 @@
+body {
+  background:linear-gradient(to right, #ff0000, #0000ff);
+  font-family:'helvetica';
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+}
+
+h1 {
+  color:white;
+  mix-blend-mode : difference;
+}
