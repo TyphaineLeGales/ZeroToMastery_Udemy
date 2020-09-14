@@ -3,6 +3,7 @@ var list = document.querySelector('ul');
 var input = document.getElementById('userInput');
 var listItems = document.querySelectorAll('li');
 
+
 btn.addEventListener('click', function () {
   if(input.value.length > 0) {
      addListItem(input);
@@ -28,6 +29,9 @@ function addListItem(input) {
     li.appendChild(document.createTextNode(input.value));
     list.appendChild(li);
     input.value = "";
+    li.addEventListener("click", function () {
+    markAsDone(li);
+  });
 }
 
 function markAsDone (el) {
