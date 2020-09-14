@@ -1,13 +1,14 @@
 var color1 = document.getElementById('color1');
 var color2 = document.getElementById('color2');
+var circles = document.querySelectorAll('.circle');
 var displayCssCode = document.querySelector('h1');
 var body = document.querySelector('body');
 
-color1.addEventListener("input", updateBackground);
+color1.addEventListener("input", updateBackgroundGradient);
 
-color2.addEventListener("input", updateBackground);
+color2.addEventListener("input", updateBackgroundGradient);
 
-function updateBackground() {
+function updateBackgroundGradient() {
   displayCssCode.innerHTML =
   "Current CSS Background : linear-gradient(to right, "
     +color1.value
@@ -20,5 +21,9 @@ function updateBackground() {
     +","
     + color2.value
     +")";
+
+    circles[0].style.backgroundColor = color1.value;
+    circles[1].style.backgroundColor = color2.value;
+
 }
 

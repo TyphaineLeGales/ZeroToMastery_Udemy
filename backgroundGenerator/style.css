@@ -12,3 +12,27 @@ h1 {
   color:white;
   mix-blend-mode : difference;
 }
+
+#color1 {
+  opacity:0;
+}
+
+.circle{
+  position:relative;
+  background-color:black;
+  height:10vw;
+  width:10vw;
+  border-radius:50%;
+  margin:2vw;
+}
+
+.colorPicker {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index : 10;
+  opacity:0;
+
+}
