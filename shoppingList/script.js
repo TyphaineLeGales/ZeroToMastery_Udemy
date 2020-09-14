@@ -17,21 +17,31 @@ input.addEventListener('keypress', function (e) {
 
 });
 
-listItems.forEach(function(listItem, index) {
-  listItem.addEventListener("click", function () {
-    markAsDone(listItems[index]);
-  });
-})
+// listItems.forEach(function(listItem, index) {
+//   listItem.addEventListener("click", function () {
+//     markAsDone(listItems[index]);
+//   });
+// })
 
+//click on a list item and it strikethroughs the text
+function getEventTarget(e){
+  e = e || window.event;
+  return e.target || e.srcElement;
+}
+
+list.onclick = function(event){
+  var target = getEventTarget(event);
+  target.classList.toggle("done");
+}
 
 function addListItem(input) {
   var li = document.createElement('li');
     li.appendChild(document.createTextNode(input.value));
     list.appendChild(li);
     input.value = "";
-    li.addEventListener("click", function () {
-    markAsDone(li);
-  });
+  //   li.addEventListener("click", function () {
+  //   markAsDone(li);
+  // });
 }
 
 function markAsDone (el) {
