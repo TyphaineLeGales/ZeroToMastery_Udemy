@@ -7,8 +7,15 @@ body {
   flex-direction:column;
 
 }
-
 h1 {
+  background: linear-gradient(to left, #ff0000, #0000ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size:5vw;
+}
+
+h3 {
   color:white;
   mix-blend-mode : difference;
 }
