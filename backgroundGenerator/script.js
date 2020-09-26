@@ -31,8 +31,8 @@ function updateBackgroundGradient() {
     +")";
   title.style.backgroundClip = "text";
   title.style.color="transparent";
-    circles[0].style.backgroundColor = color1.value;
-    circles[1].style.backgroundColor = color2.value;
+  circles[0].style.backgroundColor = color1.value;
+  circles[1].style.backgroundColor = color2.value;
 
 }
 
