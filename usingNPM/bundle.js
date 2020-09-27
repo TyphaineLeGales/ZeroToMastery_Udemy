@@ -17168,6 +17168,6 @@ const _ = require('lodash');
 
 let arr = [1, 2, 3, 4, 5, 6];
 
-console.log(_.without(arr, 2));
+console.log(_.without(arr, 3));
 
 },{"lodash":1}]},{},[2]);
