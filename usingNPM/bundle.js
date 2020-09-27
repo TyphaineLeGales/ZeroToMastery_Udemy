@@ -17166,10 +17166,8 @@
 },{}],2:[function(require,module,exports){
 const _ = require('lodash');
 
-console.log(_);
-
 let arr = [1, 2, 3, 4, 5, 6];
 
-console.log(_.without(arr, 4));
+console.log(_.without(arr, 2));
 
 },{"lodash":1}]},{},[2]);

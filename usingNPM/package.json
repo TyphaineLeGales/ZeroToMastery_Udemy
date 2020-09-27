@@ -4,7 +4,7 @@
   "description": "",
   "main": "scrpt.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "browserify script.js > bundle.js && live-server"
   },
   "author": "",
   "license": "ISC",
