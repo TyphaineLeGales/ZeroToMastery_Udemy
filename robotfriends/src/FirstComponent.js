@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './FirstComponent.css';
 
-class FirstComponent extends React.Component {
+class FirstComponent extends Component {
 	render () {
 		return (
 			<h1>hello</h1>
