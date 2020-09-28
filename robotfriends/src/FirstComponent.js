@@ -7,7 +7,7 @@ class FirstComponent extends Component {
 		return (
 			<div className ="tc f1"> 
 				<h1>hello world</h1>
-				<p>Welcome to React</p>
+				<p>{this.props.welcome}</p>
 			</div>
 		)
 	}

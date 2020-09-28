@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 
-    <FirstComponent />,
+    <FirstComponent welcome={"welcome to react"}/>,
   document.getElementById('root')
 );
 
