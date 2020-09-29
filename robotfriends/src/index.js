@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; //renders for the web
 import './index.css';
-import FirstComponent from './FirstComponent';
+import Card from './Card';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 
-    <FirstComponent welcome={"welcome to react"}/>,
+  <div className="cardsContainer">
+  	<Card name="robocop"/>
+  	<Card name="robof"/>
+  	<Card name="robotanique"/>
+  	<Card name="robobard"/>
+  </div>,
   document.getElementById('root')
 );
 
