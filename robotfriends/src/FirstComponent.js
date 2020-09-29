@@ -13,4 +13,14 @@ class FirstComponent extends Component {
 	}
 }
 
+// const FirstComponent = (props) => {
+// 	return (
+// 		<div className ="tc f1"> 
+// 			<h1>hello world</h1>
+// 			<p>{props.welcome}</p>
+// 		</div>
+// 	)
+// }
+
 export default FirstComponent;
+
