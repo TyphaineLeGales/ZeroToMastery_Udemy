@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './SearchBar.css'
 
 const SearchBar = ({searchChange}) => {
 	return (
-		<div className='pa2'>
+		<div className='pa2 searchbar'>
 			<input 
 				className='pa3 ba'
 				type="search" 
