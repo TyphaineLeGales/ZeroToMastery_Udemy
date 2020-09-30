@@ -33,13 +33,17 @@ class App extends Component {
 		const filteredRobots = this.state.robots.filter(robots => {
 			return robots.name.toLowerCase().includes(this.state.searchfield);
 		})
-		return(
-			<div className="tc ">
-				<h1 className="f1">Robot Friends</h1>
-				<SearchBar searchChange={this.onSearchChange}/>
-				<CardList elements={filteredRobots}/>
-			</div>
-		)
+		if(this.state.robots.length === 0) {
+			return <h1 className='tc'>Loading ...</h1>
+		} else {
+			return(
+				<div className="tc ">
+					<h1 className="f1">Robot Friends</h1>
+					<SearchBar searchChange={this.onSearchChange}/>
+					<CardList elements={filteredRobots}/>
+				</div>
+			)
+		}
 	}
 }
 
