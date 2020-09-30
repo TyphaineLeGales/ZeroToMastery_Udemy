@@ -4,6 +4,9 @@ import Card from './Card';
 
 const CardList = ({elements}) => {
 	const cardComponent = elements.map((el, i) => {
+		// if(true) {
+		// 	throw new Error('noooo');
+		// }
 		return( 
 			<Card 
 				key={i} 
