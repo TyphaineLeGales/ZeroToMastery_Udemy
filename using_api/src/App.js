@@ -1,13 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const getPlanets = async function() {
+    try {
+      const resp = await fetch('https://swapi.py4e.com/api/planets/');
+      const planets = await resp.json();
+      console.log(planets);
+
+    } catch (error) {
+      console.log('something went wrong', error);
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    {console.log(getPlanets())}
     </div>
   );
 }
