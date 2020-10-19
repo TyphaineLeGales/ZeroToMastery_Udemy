@@ -1,0 +1,8 @@
+.planetList {
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content: center;
+	flex-wrap:auto;
+}

@@ -20,7 +20,9 @@ class App extends Component {
 	render () {
 		const {planets} = this.state;
 		return(
-			 <PlanetList planetList = {planets} ></PlanetList>
+			<div className="App">
+				<PlanetList planetList = {planets} ></PlanetList>
+			</div>
 		)
 	}
 }
