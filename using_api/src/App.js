@@ -11,8 +11,9 @@ class App extends Component {
 	componentDidMount() {
 		fetch('https://swapi.py4e.com/api/planets/')
 		.then(response => response.json())
+		.then(data => data.results)
 		.then(planets => this.setState({planets : planets}))
-		.catch(error => console.log('error'))
+		.catch(error => console.log('oops something went wrong'))
    
 	}
 
