@@ -21,6 +21,7 @@ class App extends Component {
 		const {planets} = this.state;
 		return(
 			<div className="App">
+			<h1 className="title">STAR WARS PLANET</h1>
 				<PlanetList planetList = {planets} ></PlanetList>
 			</div>
 		)
