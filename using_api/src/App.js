@@ -1,24 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import PlanetList from './PlanetList';
 
+class App extends Component {
+	constructor () {
+		super()
+		this.state = {planets: []};
+	}
 
-// function App() {
+	componentDidMount() {
+		fetch('https://swapi.py4e.com/api/planets/')
+		.then(response => response.json())
+		.then(planets => this.setState({planets : planets}))
+		.catch(error => console.log('error'))
+   
+	}
 
-//   return (
-//     <div className="App">
-//       <PlanetList></PlanetList>
-//     </div>
-//   );
-// }
-
-const App = () => {
-
-  return (
-    <div className="App">
-      <PlanetList></PlanetList>
-    </div>
-  );
+	render () {
+		const {planets} = this.state;
+		return(
+			 <PlanetList planetList = {planets} ></PlanetList>
+		)
+	}
 }
 
 export default App;
