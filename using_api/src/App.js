@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
+import PlanetList from './PlanetList';
 
-function App() {
-  const getPlanets = async function() {
-    try {
-      const resp = await fetch('https://swapi.py4e.com/api/planets/');
-      const planets = await resp.json();
-      console.log(planets);
 
-    } catch (error) {
-      console.log('something went wrong', error);
-    }
-  }
+// function App() {
+
+//   return (
+//     <div className="App">
+//       <PlanetList></PlanetList>
+//     </div>
+//   );
+// }
+
+const App = () => {
 
   return (
     <div className="App">
-    {console.log(getPlanets())}
+      <PlanetList></PlanetList>
     </div>
   );
 }
