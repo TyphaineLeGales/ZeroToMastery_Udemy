@@ -61,11 +61,11 @@ const App = () => {
 	useEffect(() => {
 		fetch('https://jsonplaceholder.typicode.com/users')
 		.then(response => response.json())
-		.then(users => setRobots({robots:users}));
+		.then(users => setRobots(users));
 	});
 
 	const onSearchChange = (event) => {
-		setSearchfield({searchfield: event.target.value});
+		setSearchfield(event.target.value);
 	}
 
 	const filteredRobots = robots.filter(robot => {
