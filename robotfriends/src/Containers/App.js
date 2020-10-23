@@ -59,10 +59,11 @@ const App = () => {
 	const [searchfield, setSearchfield] = useState('');
 
 	useEffect(() => {
+		console.log('useEffect is called');
 		fetch('https://jsonplaceholder.typicode.com/users')
 		.then(response => response.json())
 		.then(users => setRobots(users));
-	});
+	}, [searchfield]);
 
 	const onSearchChange = (event) => {
 		setSearchfield(event.target.value);
